@@ -1,40 +1,102 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080914"><meta name="description" content="Une expédition poétique entre les étoiles et les abricots.">
-<title>ORBITAL — Le verger des étoiles</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11100f"><meta name="description" content="ORBITAL/01 — Une traversée photographique au cœur du cosmos.">
+<title>ORBITAL/01 — Le cosmos, en grand</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<div class="noise"></div><div class="progress" id="progress"></div>
-<header class="topbar"><a class="brand" href="#top"><span class="brand-orbit">◉</span> ORBITAL<span class="brand-dot">/</span>01</a><nav><a href="#mission">MISSION</a><a href="#systeme">SYSTÈME</a><a href="#verger">LE VERGER</a><a href="#journal">JOURNAL</a></nav><button class="sound-toggle" id="soundToggle" aria-label="Activer l'ambiance sonore" title="Ambiance sonore">♫ <span>SON OFF</span></button><button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button></header>
-<main id="top">
-<section class="hero">
-<div class="hero-grid"></div><div class="hero-copy"><p class="eyebrow"><span class="pulse"></span> ARCHIVES D'UNE EXPÉDITION IMPROBABLE · 2086</p>
-<h1>LE GOÛT<br>DES <em>ÉTOILES.</em></h1>
-<p class="hero-sub">Quelque part entre la poussière cosmique et la peau veloutée d'un abricot, il existe un monde à découvrir.</p>
-<div class="hero-actions"><a class="button button-bright" href="#mission">COMMENCER L'EXPÉDITION <span>↗</span></a><span class="micro">COORDONNÉES : 47° APRICOT / ∞</span></div></div>
-<div class="hero-art" aria-label="Illustration d'un abricot flottant dans l'espace"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet planet-large"><div class="planet-shine"></div><div class="planet-leaf"></div></div><div class="moon moon-a"></div><div class="moon moon-b"></div><div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">✦</div><div class="coordinate">FIG. 001 — FRUIT CÉLESTE<br><b>R = 3.4 CM</b></div><div class="art-label">PRÉCIEUX<br>ET COMESTIBLE ?</div></div>
-<div class="hero-bottom"><span>FAITES DÉFILER POUR EXPLORER</span><span class="scroll-line"></span><span>SCROLL / 001—004</span></div>
-</section>
-<section class="ticker" aria-label="Slogan"><div class="ticker-track"><span>ORBITES &amp; ORANGERS ✳ FRUITS DU FUTUR ✳ SCIENCE &amp; POÉSIE ✳ ORBITES &amp; ORANGERS ✳ FRUITS DU FUTUR ✳ SCIENCE &amp; POÉSIE ✳</span></div></section>
-<section class="intro section-pad" id="mission"><div class="section-index">01 <span>/ LA MISSION</span></div><div class="intro-content"><p class="eyebrow">UN PETIT PAS POUR LE FRUIT</p><h2>Et si le prochain<br>grand voyage spatial<br>avait un <em>noyau ?</em></h2><div class="intro-bottom"><p>En 2086, une équipe de botanistes et d'astronomes a repéré une anomalie : un signal orangé, au bord d'une nébuleuse. À l'origine de ce mystère ? Un verger. Des milliers d'abricotiers, en apesanteur, baignés par deux soleils.</p><div class="mission-stamp"><span>MISSION</span><strong>AP-2086</strong><small>CLASSIFIED / FUN</small></div></div></div><div class="intro-scribble">✳</div></section>
-<section class="system-section section-pad" id="systeme"><div class="section-index">02 <span>/ CARTOGRAPHIE</span></div><div class="section-head"><div><p class="eyebrow">ATLAS ORBITAL · SECTEUR 7</p><h2>Un système<br><em>à croquer.</em></h2></div><p class="section-note">Sélectionnez un astre pour découvrir sa fiche d'identité. Certaines données sont scientifiques. D'autres… viennent de notre imagination.</p></div>
-<div class="system-layout"><div class="system-visual" id="systemVisual"><div class="system-sun"><span>☼</span></div><div class="system-orbit o1"><button class="world w1" data-world="mercury" aria-label="Explorer Mercure"></button></div><div class="system-orbit o2"><button class="world w2" data-world="venus" aria-label="Explorer Vénus"></button></div><div class="system-orbit o3"><button class="world w3 active" data-world="apricot" aria-label="Explorer Abricot-7"></button></div><div class="system-orbit o4"><button class="world w4" data-world="mars" aria-label="Explorer Mars"></button></div><div class="system-orbit o5"><button class="world w5" data-world="jupiter" aria-label="Explorer Jupiter"></button></div><div class="orbit-caption">SYSTÈME HÉLIOS · VUE SCHÉMATIQUE</div></div>
-<div class="world-card" aria-live="polite"><div class="card-top"><span id="worldTag">OBJET 03 / EXOPLANÈTE FICTIVE</span><span class="live-dot">● ARCHIVE</span></div><h3 id="worldName">Abricot-7</h3><p class="world-kicker" id="worldKicker">Le verger en apesanteur</p><div class="world-divider"></div><p id="worldFact">Une planète imaginaire où les arbres poussent dans des anneaux de poussière dorée.</p><div class="world-data"><div><span>TYPE</span><b id="worldType">ROC / BIO</b></div><div><span>TEMPÉRATURE</span><b id="worldTemp">18 °C</b></div><div><span>JOURNÉE</span><b id="worldDay">31 H</b></div></div><p class="fiction-note" id="worldNote">✳ Fable cosmique — cette planète n'existe pas.</p></div></div></section>
-<section class="quote-band"><span class="quote-mark">“</span><p>La gravité nous retient au sol.<br><em>L'imagination, elle, n'a pas de poids.</em></p><span class="quote-credit">— CARNET DE BORD, PAGE 12</span></section>
-<section class="orchard-section section-pad" id="verger"><div class="section-index">03 <span>/ BIOSPHÈRE</span></div><div class="section-head"><div><p class="eyebrow">JARDIN BOTANIQUE INTERSTELLAIRE</p><h2>Bienvenue dans<br>le <em>verger.</em></h2></div><p class="section-note">Approchez les fruits. Touchez-les. Chacun raconte une petite histoire venue d'une autre gravité.</p></div>
-<div class="orchard-scene"><div class="orchard-sky"><div class="twin-sun"></div><div class="distant-planet"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="orchard-ground"></div><div class="tree tree-one"><i></i><b></b><span></span></div><div class="tree tree-two"><i></i><b></b><span></span></div><div class="tree tree-three"><i></i><b></b><span></span></div>
-<button class="fruit fruit-one" data-fruit="aube" aria-label="Découvrir l'abricot de l'Aube"><span></span></button><button class="fruit fruit-two" data-fruit="lune" aria-label="Découvrir l'abricot lunaire"><span></span></button><button class="fruit fruit-three" data-fruit="nova" aria-label="Découvrir l'abricot Nova"><span></span></button><button class="fruit fruit-four" data-fruit="comete" aria-label="Découvrir l'abricot comète"><span></span></button><div class="scene-coords">N 04° 22' / SECTEUR PÉPINS</div><div class="scene-instruction">↖ CLIQUEZ SUR UN FRUIT</div></div></div>
-<div class="fruit-detail" id="fruitDetail" aria-live="polite"><div class="fruit-detail-icon">✳</div><div><span class="eyebrow" id="fruitType">SPÉCIMEN SÉLECTIONNÉ</span><h3 id="fruitName">Le fruit de l'Aube</h3><p id="fruitText">Sa peau capte les premiers rayons de deux soleils. On raconte qu'il change de couleur à chaque lever de lune.</p></div><span class="fruit-number" id="fruitNumber">01 / 04</span></div>
-</section>
-<section class="controls-section section-pad"><div class="section-index">04 <span>/ LABORATOIRE</span></div><div class="controls-grid"><div><p class="eyebrow">POSTE DE CONTRÔLE</p><h2>Réglez votre<br><em>univers.</em></h2><p class="section-note">Prenez les commandes du petit cosmos. Les réglages modifient directement la scène ci-dessous.</p></div><div class="control-panel"><div class="control-row"><label for="orbitSpeed">VITESSE ORBITALE <output id="speedValue">1.0×</output></label><input id="orbitSpeed" type="range" min="0" max="3" value="1" step=".1"></div><div class="control-row"><label for="starDensity">DENSITÉ STELLAIRE <output id="starValue">60%</output></label><input id="starDensity" type="range" min="0" max="100" value="60"></div><div class="control-row switch-row"><div><label for="cometMode">PLUIE DE COMÈTES</label><small>Des visiteurs traversent le ciel.</small></div><button class="switch" id="cometMode" role="switch" aria-checked="false"><span></span></button></div><div class="control-readout"><span>ÉTAT DU SYSTÈME</span><b id="systemState">NOMINAL · BON VOYAGE</b></div></div></div><div class="control-cosmos" id="controlCosmos"><div class="control-planet"></div><div class="control-ring"></div><div class="control-comet"></div><span class="control-cosmos-label">LIVE SIMULATION / AP-7</span></div></section>
-<section class="film-section section-pad" id="journal"><div class="section-index">05 <span>/ TRANSMISSION</span></div><div class="film-header"><div><p class="eyebrow">JOURNAL VIDÉO · TRANSMISSION 006</p><h2>Un œil sur<br><em>l'infini.</em></h2></div><p class="section-note">Un fragment de cosmos, capturé par les sondes qui ont inspiré cette mission.</p></div><div class="video-frame"><div id="spaceVideo" class="youtube-player" role="button" tabindex="0" aria-label="Lancer la vidéo spatiale YouTube"><img src="https://img.youtube.com/vi/CDb_fE4IjE0/hqdefault.jpg" alt="Aperçu de la vidéo spatiale"></div><div class="video-overlay" id="videoOverlay"><div class="play-orb">▶</div><span>CLIQUER POUR LANCER LA TRANSMISSION</span></div><div class="video-corner">YOUTUBE · TRANSMISSION COSMIQUE</div></div><div class="video-caption"><span>TRANSMISSION 006 — DEEP SPACE</span><span>VIDÉO PARTAGÉE · CDb_fE4IjE0</span></div></section>
-<section class="finale section-pad"><div class="finale-stars">✦ &nbsp; · &nbsp; ✧ &nbsp; · &nbsp; ✦</div><p class="eyebrow">FIN DE LA PREMIÈRE ORBITE</p><h2>À bientôt,<br><em>quelque part.</em></h2><p>Le cosmos est vaste. Les vergers aussi.</p><a class="button button-bright" href="#top">RETOURNER AU DÉPART ↑</a><div class="giant-apricot"></div></section>
+<canvas id="starfield" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <a class="wordmark" href="#top" aria-label="Orbital, accueil">ORBITAL<span>/01</span></a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+  <nav class="main-nav" aria-label="Navigation principale"><a href="#vision">La vision</a><a href="#galerie">Galerie</a><a href="#film">Le film</a></nav>
+  <a class="header-cta" href="#galerie">Explorer <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <img class="hero-image parallax" src="assets/images/golden-nebula.jpg" alt="Nébuleuse dorée traversée d'étoiles" fetchpriority="high">
+    <div class="hero-shade"></div><div class="hero-index mono">ARCHIVES VISUELLES · 001—012</div>
+    <div class="hero-copy">
+      <p class="eyebrow"><i></i> AUX FRONTIÈRES DU VISIBLE</p>
+      <h1>Le cosmos,<br><em>en grand.</em></h1>
+      <p class="hero-intro">Un voyage à travers les images les plus saisissantes de notre univers. Prenez le temps de regarder.</p>
+      <a class="round-link" href="#vision"><span>Défiler pour explorer</span><b>↓</b></a>
+    </div>
+    <div class="hero-caption mono"><span>01 / NÉBULEUSE DORÉE</span><span>ESPACE PROFOND · 4K</span></div>
+  </section>
+
+  <section class="vision section-light" id="vision">
+    <div class="section-kicker mono"><span>01</span> LA VISION</div>
+    <div class="vision-grid">
+      <h2 class="reveal">Un regard<br>vers <em>l’infini.</em></h2>
+      <div class="vision-copy reveal"><p>Des galaxies lointaines aux nuages de poussière stellaire, chaque image ouvre une fenêtre sur un monde qui nous dépasse.</p><p>ORBITAL/01 rassemble ces fragments de cosmos dans une collection à parcourir lentement, comme une exposition sous les étoiles.</p><a class="underlink" href="#galerie">Parcourir la collection <span>↘</span></a></div>
+    </div>
+    <div class="facts reveal"><div><strong>13,8 <small>Md</small></strong><span>années d’univers</span></div><div><strong>∞</strong><span>choses à découvrir</span></div><div><strong>001—012</strong><span>fragments réunis</span></div></div>
+  </section>
+
+  <section class="feature">
+    <img class="feature-image parallax" src="assets/images/earth-horizon.jpg" alt="L’horizon terrestre vu depuis l’espace" loading="lazy">
+    <div class="feature-shade"></div>
+    <div class="feature-copy reveal"><p class="eyebrow"><i></i> NOTRE POINT BLEU</p><h2>Chez nous,<br>vus de <em>loin.</em></h2><p>Un horizon fragile, suspendu dans l’obscurité.</p><a class="text-arrow" href="#galerie">Continuer le voyage <span>↗</span></a></div>
+    <span class="feature-label mono">02 / HORIZON TERRESTRE</span>
+  </section>
+
+  <section class="gallery-section section-light" id="galerie">
+    <div class="section-kicker mono"><span>02</span> LA COLLECTION</div>
+    <div class="gallery-heading reveal"><div><p class="eyebrow dark"><i></i> FENÊTRES SUR L’UNIVERS</p><h2>La beauté<br>du <em>lointain.</em></h2></div><p>Douze images, un seul mouvement : s’éloigner juste assez pour voir autrement.</p></div>
+    <div class="gallery-grid">
+      <button class="gallery-item tall reveal" data-full="assets/images/space-wallpapers.jpg" data-caption="La Voie lactée · poussière et lumière">
+        <img src="assets/images/space-wallpapers.jpg" alt="Bras lumineux de la Voie lactée" loading="lazy"><span class="image-meta"><b>01</b><span>LA VOIE LACTÉE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/istockphoto-2277120368-612x612.jpg" data-caption="Nébuleuse verte · naissance d’une galaxie">
+        <img src="assets/images/istockphoto-2277120368-612x612.jpg" alt="Galaxie lumineuse aux teintes vertes et dorées" loading="lazy"><span class="image-meta"><b>02</b><span>NÉBULEUSE VERTE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/blue-planet.jpg" data-caption="Au-delà de l’horizon · monde bleu">
+        <img src="assets/images/blue-planet.jpg" alt="Monde bleu et étoile brillante" loading="lazy"><span class="image-meta"><b>03</b><span>AU-DELÀ DE L’HORIZON</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item wide reveal" data-full="assets/images/earth-blue.jpg" data-caption="La Terre · une oasis dans le noir">
+        <img src="assets/images/earth-blue.jpg" alt="La Terre émergeant de l’ombre spatiale" loading="lazy"><span class="image-meta"><b>04</b><span>NOTRE OASIS</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/milky-way.jpeg" data-caption="Nuit bleue · poussière d’étoiles">
+        <img src="assets/images/milky-way.jpeg" alt="Nuage dense d’étoiles sur fond bleu profond" loading="lazy"><span class="image-meta"><b>05</b><span>NUIT BLEUE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/stellar-drift.gif" data-caption="Dérive stellaire · une traversée animée">
+        <img src="assets/images/stellar-drift.gif" alt="Silhouette traversant un ciel étoilé animé" loading="lazy"><span class="image-meta"><b>06</b><span>DÉRIVE STELLAIRE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item tall reveal" data-full="assets/images/earth-transit.webp" data-caption="Transit lunaire · la Terre observée par DSCOVR">
+        <img src="assets/images/earth-transit.webp" alt="La Lune traverse le disque terrestre" loading="lazy"><span class="image-meta"><b>07</b><span>TRANSIT LUNAIRE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/cosmic-panorama.webp" data-caption="Atlas céleste · un panorama d’astronomie">
+        <img src="assets/images/cosmic-panorama.webp" alt="Panorama composé de vues célestes" loading="lazy"><span class="image-meta"><b>08</b><span>ATLAS CÉLESTE</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/dscovrepicmoontransitfull.webp" data-caption="DSCOVR · un monde bleu dans le vide">
+        <img src="assets/images/dscovrepicmoontransitfull.webp" alt="Planète bleue isolée sur fond noir" loading="lazy"><span class="image-meta"><b>09</b><span>UN MONDE BLEU</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item wide reveal" data-full="assets/images/deep-field.avif" data-caption="Champ profond · mille univers dans une image">
+        <img src="assets/images/deep-field.avif" alt="Champ d’étoiles et galaxies lointaines" loading="lazy"><span class="image-meta"><b>10</b><span>CHAMP PROFOND</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/carina-nebula.gif" data-caption="Nébuleuse de la Carène · animation">
+        <img src="assets/images/carina-nebula.gif" alt="Nuages colorés de la nébuleuse de la Carène" loading="lazy"><span class="image-meta"><b>11</b><span>POUSSIÈRE D’ÉTOILES</span><i>↗</i></span>
+      </button>
+      <button class="gallery-item reveal" data-full="assets/images/orbital-world.gif" data-caption="Monde en orbite · animation">
+        <img src="assets/images/orbital-world.gif" alt="Planète violette dans une galaxie animée" loading="lazy"><span class="image-meta"><b>12</b><span>MONDE EN ORBITE</span><i>↗</i></span>
+      </button>
+    </div>
+    <div class="gallery-end mono">FIN DE LA COLLECTION <span>·</span> LE CIEL RESTE OUVERT</div>
+  </section>
+
+  <section class="interlude"><img class="parallax" src="assets/images/cosmic-panorama.webp" alt="" loading="lazy"><div class="interlude-shade"></div><p class="mono reveal">IL Y A TOUJOURS PLUS LOIN.</p></section>
+
+  <section class="film-section" id="film">
+    <div class="film-copy reveal"><p class="eyebrow"><i></i> TRANSMISSION · 001</p><h2>Une autre<br>façon de <em>voir.</em></h2><p>Installez-vous et laissez défiler les images. Le voyage continue au-delà du cadre.</p></div>
+    <div class="video-frame reveal" id="videoFrame"><button class="video-launch" aria-label="Lire la vidéo YouTube"><img src="https://img.youtube.com/vi/CDb_fE4IjE0/hqdefault.jpg" alt="Aperçu de la vidéo spatiale" loading="lazy"><span>▶</span></button><div class="video-note mono">LECTURE VIDÉO <i>↗</i></div></div>
+  </section>
 </main>
-<footer><a class="brand" href="#top">◉ ORBITAL/01</a><span>UN PROJET ENTRE SCIENCE &amp; FICTION · 2086—∞</span><span>FAIT AVEC CURIOSITÉ ✳</span></footer>
+<footer class="site-footer"><a class="wordmark" href="#top">ORBITAL<span>/01</span></a><p>Un regard vers l’infini.</p><a class="back-top mono" href="#top">RETOUR AU DÉPART ↑</a><span class="copyright mono">© 2026 · ARCHIVES COSMIQUES</span></footer>
+<div class="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Fermer">×</button><button class="lightbox-prev" aria-label="Image précédente">←</button><figure><img alt=""><figcaption></figcaption></figure><button class="lightbox-next" aria-label="Image suivante">→</button><span class="lightbox-counter mono"></span></div>
 <script src="assets/js/main.js"></script>
 </body></html>
